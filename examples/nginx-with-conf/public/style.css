@@ -1,0 +1,47 @@
+/* included from https://matejlatin.github.io/Gutenberg/ */
+* {
+  max-width: 640px;
+  max-width: 32rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  line-height: 32px;
+  line-height: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+html {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+body,
+html {
+  margin: 0;
+  width: 100%;
+  max-width: none;
+}
+
+h1 {
+  color: #212121;
+  font-family: ff-meta-web-pro, Helvetica, Arial, sans-serif;
+  font-size: 56px;
+  font-size: 3.5rem;
+  line-height: 80px;
+  line-height: 4rem;
+  letter-spacing: -0.025em;
+  margin-top: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+
+#msg {
+  animation: fade-out 3s ease-out forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
