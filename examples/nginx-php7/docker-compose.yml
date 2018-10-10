@@ -1,0 +1,17 @@
+version: '2'
+services:
+  nginx:
+    build: ./nginx/
+    ports:
+      - "80:80"
+    volumes_from:
+      - php
+    volumes:
+      - ./nginx/log:/var/log/nginx
+    links:
+      - php
+
+  php:
+    build: ./php/
+    volumes:
+      - ./www:/www
